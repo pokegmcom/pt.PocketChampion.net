@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia do Sistema de Terastalização - Guia do PocketChampion</title>
+    <meta name="description" content="Guia do sistema de Terastalização do PocketChampion, introdução detalhada aos princípios, efeitos e dicas de uso da Terastalização para dar vantagem nas batalhas">
+    <meta name="keywords" content="PocketChampion, Terastalização, sistema de batalha, guia do jogo, dicas de batalha">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
+        body { font-family: 'Noto Sans', sans-serif; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .btn-hover { transition: all 0.3s ease; }
+        .btn-hover:hover { transform: scale(1.05); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="sticky top-0 z-50 bg-dark bg-opacity-80 backdrop-blur-md text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="../images/logo.png" alt="PocketChampion Logo" class="h-10 mr-3">
+                    <span class="text-xl font-bold">PocketChampion</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="font-medium hover:text-accent transition-colors">Início</a>
+                    <a href="../features.html" class="font-medium hover:text-accent transition-colors">Recursos</a>
+                    <a href="../guides.html" class="font-medium hover:text-accent transition-colors">Guias</a>
+                    <a href="../codes.html" class="font-medium hover:text-accent transition-colors">Códigos</a>
+                    <a href="../articles.html" class="font-medium hover:text-accent transition-colors">Artigos</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none"><i class="fa fa-bars text-xl"></i></button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <a href="../index.html" class="block py-2 font-medium hover:text-accent transition-colors">Início</a>
+                <a href="../features.html" class="block py-2 font-medium hover:text-accent transition-colors">Recursos</a>
+                <a href="../guides.html" class="block py-2 font-medium hover:text-accent transition-colors">Guias</a>
+                <a href="../codes.html" class="block py-2 font-medium hover:text-accent transition-colors">Códigos</a>
+                <a href="../articles.html" class="block py-2 font-medium hover:text-accent transition-colors">Artigos</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-64 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../images/Portuguese/4.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
+        <div class="relative z-10 text-center text-white max-w-4xl px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Guia do Sistema de Terastalização</h1>
+            <p class="text-lg md:text-xl">5 de março de 2026</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="prose max-w-none">
+                <p class="text-gray-600 mb-6">A Terastalização é uma mecânica importante de batalha no PocketChampion que pode mudar o tipo de um Pokémon e aprimorar movimentos específicos. Este guia apresenta uma introdução detalhada aos princípios, efeitos e dicas de uso da Terastalização para ajudá-lo a aproveitar ao máximo essa mecânica poderosa.</p>
+                
+                <h2 class="text-2xl font-bold mb-4">O que é Terastalização?</h2>
+                <p class="text-gray-600 mb-6">A Terastalização é um fenômeno que ocorre na região de Paldea, onde os Pokémon podem cristalizar e mudar seu tipo. Cada Pokémon tem um Tipo Tera único que pode ser ativado durante a batalha para mudar seu tipo e aprimorar movimentos daquele tipo.</p>
+                
+                <h2 class="text-2xl font-bold mb-4">Como Ativar a Terastalização</h2>
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li class="text-gray-600">Cada Pokémon pode ativar Terastalização uma vez por batalha</li>
+                    <li class="text-gray-600">A Terastalização dura 3 turnos após a ativação</li>
+                    <li class="text-gray-600">O Tipo Tera pode ser diferente do tipo original do Pokémon</li>
+                    <li class="text-gray-600">Movimentos do Tipo Tera recebem um aumento de 50% no poder</li>
+                </ul>
+                
+                <h2 class="text-2xl font-bold mb-4">Estratégias de Terastalização</h2>
+                <div class="bg-light rounded-2xl p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-2">Terastalização Ofensiva</h3>
+                    <p class="text-gray-600 mb-4">Use Terastalização para mudar o tipo do seu Pokémon para um que seja super efetivo contra o oponente e use movimentos daquele tipo para causar dano máximo.</p>
+                </div>
+                <div class="bg-light rounded-2xl p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-2">Terastalização Defensiva</h3>
+                    <p class="text-gray-600 mb-4">Use Terastalização para mudar o tipo do seu Pokémon para um que resista aos movimentos do oponente, reduzindo o dano recebido.</p>
+                </div>
+                <div class="bg-light rounded-2xl p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-2">Terastalização de Cobertura</h3>
+                    <p class="text-gray-600 mb-4">Use Terastalização para cobrir as fraquezas do seu Pokémon, mudando para um tipo que resista movimentos que normalmente causariam dano pesado.</p>
+                </div>
+                
+                <h2 class="text-2xl font-bold mb-4">Dicas Avançadas</h2>
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li class="text-gray-600">Aprenda o Tipo Tera de cada Pokémon para planejar estratégias com antecedência</li>
+                    <li class="text-gray-600">Combine Terastalização com Mega Evolução para poder devastador</li>
+                    <li class="text-gray-600">Ative Terastalização no momento certo para maximizar seu efeito</li>
+                    <li class="text-gray-600">Considere as vantagens de tipo antes de ativar Terastalização</li>
+                </ul>
+                <p class="text-gray-600 mb-6">A Terastalização é uma mecânica poderosa que pode mudar o curso de qualquer batalha. Domine a Terastalização e torne-se um mestre de batalha!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Artigos Relacionados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../images/Portuguese/2.jpg" alt="PocketChampion Anúncio de Abertura ao Público" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Anúncio de Abertura ao Público</h3>
+                        <p class="text-gray-600 mb-4">O PocketChampion lançará oficialmente sua abertura ao público em 20 de março de 2026.</p>
+                        <a href="article1.html" class="text-primary font-medium hover:underline">Ler Mais</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../images/Portuguese/3.jpg" alt="PocketChampion Guia de Seleção de Inicial" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Guia de Seleção de Pokémon Inicial</h3>
+                        <p class="text-gray-600 mb-4">Introdução detalhada às características e prós/contras dos iniciais de cada geração.</p>
+                        <a href="article2.html" class="text-primary font-medium hover:underline">Ler Mais</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../images/Portuguese/5.jpg" alt="PocketChampion Guia de Batalha Multiplayer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Guia de Batalha Terastal Multiplayer</h3>
+                        <p class="text-gray-600 mb-4">Introdução às regras, dicas e melhores composições de equipe para batalhas Terastal multiplayer.</p>
+                        <a href="article4.html" class="text-primary font-medium hover:underline">Ler Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Comece Sua Aventura Agora</h2>
+            <p class="text-xl mb-8">Domine a Terastalização e torne-se um mestre de batalha</p>
+            <a href="https://game.6266game.cn/website/zdbjl/?w7cdSjjj" class="bg-white text-primary font-bold py-4 px-10 rounded-xl border-2 border-white btn-hover inline-block">
+                <i class="fa fa-download mr-2"></i>Baixar Agora
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PocketChampion</h3>
+                    <p class="text-gray-400">Um jogo de batalha RPG com 1000+ Pokémon das gerações 1-9</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Início</a></li>
+                        <li><a href="../features.html" class="text-gray-400 hover:text-white transition-colors">Recursos</a></li>
+                        <li><a href="../guides.html" class="text-gray-400 hover:text-white transition-colors">Guias</a></li>
+                        <li><a href="../codes.html" class="text-gray-400 hover:text-white transition-colors">Códigos</a></li>
+                        <li><a href="../articles.html" class="text-gray-400 hover:text-white transition-colors">Artigos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contate-nos</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fa fa-envelope mr-2"></i> <span class="text-gray-400">support@pocketchampion.com</span></li>
+                        <li class="flex items-center"><i class="fa fa-phone mr-2"></i> <span class="text-gray-400">+86 123 4567 8910</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Siga-nos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 PocketChampion. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

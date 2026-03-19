@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anúncio de Abertura ao Público do PocketChampion - Notícia do Jogo</title>
+    <meta name="description" content="O PocketChampion lançará oficialmente sua abertura ao público em 20 de março de 2026. Os jogadores podem experimentar o conteúdo completo do jogo, incluindo todos os Pokémon das gerações 1-9, sistemas de Terastalização e Mega Evolução, batalhas multiplayer e muito mais">
+    <meta name="keywords" content="PocketChampion, abertura ao público, notícia do jogo, jogo de Pokémon, RPG">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Barra de Navegação -->
+    <nav class="sticky top-0 z-50 bg-dark bg-opacity-80 backdrop-blur-md text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="../images/logo.png" alt="PocketChampion Logo" class="h-10 mr-3">
+                    <span class="text-xl font-bold">PocketChampion</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="font-medium hover:text-accent transition-colors">Início</a>
+                    <a href="../features.html" class="font-medium hover:text-accent transition-colors">Características</a>
+                    <a href="../guides.html" class="font-medium hover:text-accent transition-colors">Guias</a>
+                    <a href="../codes.html" class="font-medium hover:text-accent transition-colors">Códigos</a>
+                    <a href="../articles.html" class="font-medium hover:text-accent transition-colors">Artigos</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Menu Móvel -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <a href="../index.html" class="block py-2 font-medium hover:text-accent transition-colors">Início</a>
+                <a href="../features.html" class="block py-2 font-medium hover:text-accent transition-colors">Características</a>
+                <a href="../guides.html" class="block py-2 font-medium hover:text-accent transition-colors">Guias</a>
+                <a href="../codes.html" class="block py-2 font-medium hover:text-accent transition-colors">Códigos</a>
+                <a href="../articles.html" class="block py-2 font-medium hover:text-accent transition-colors">Artigos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="relative h-64 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../images/Portuguese/2.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
+        <div class="relative z-10 text-center text-white max-w-4xl px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Anúncio de Abertura ao Público do PocketChampion</h1>
+            <p class="text-lg md:text-xl">15 de março de 2026</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo do Artigo -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="prose max-w-none">
+                <p class="text-gray-600 mb-6">Caros Treinadores:</p>
+                
+                <p class="text-gray-600 mb-6">Estamos muito felizes em anunciar que o PocketChampion lançará oficialmente sua abertura ao público em 20 de março de 2026! Após um longo período de desenvolvimento e testes, estamos finalmente prontos para apresentar este jogo a todos.</p>
+                
+                <h2 class="text-2xl font-bold mb-4">Conteúdo da Abertura ao Público</h2>
+                
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li class="text-gray-600">Gerações 1-9 1000+ coleção de Pokémon, incluindo todos os starters e Pokémon lendários</li>
+                    <li class="text-gray-600">Terastalização + Mega Evolução coexistência, nova experiência de batalha</li>
+                    <li class="text-gray-600">Mudança livre HD/pixelado em 3D, ajuste livre de perspectiva de batalha</li>
+                    <li class="text-gray-600">Batalhas de dois jogadores, batalhas Terastal multiplayer, novo gameplay de batalha</li>
+                    <li class="text-gray-600">Rica história e sistema de missões do jogo</li>
+                    <li class="text-gray-600">Sistema de treinamento e evolução de Pokémon</li>
+                </ul>
+                
+                <h2 class="text-2xl font-bold mb-4">Benefícios da Abertura ao Público</h2>
+                
+                <p class="text-gray-600 mb-6">Para celebrar a abertura ao público, preparamos benefícios generosos:</p>
+                
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li class="text-gray-600">Todos os jogadores da abertura ao público receberão um pacote de presente de novato: 1000 Diamantes, 10 Pokébolas Avançadas, 50 Doces de Experiência</li>
+                    <li class="text-gray-600">Faça login por 7 dias consecutivos para obter um Pokémon raro</li>
+                    <li class="text-gray-600">Complete tarefas de novato para obter uma Pedra Mega</li>
+                    <li class="text-gray-600">Participe de atividades de abertura ao público para obter skins e títulos limitados</li>
+                </ul>
+                
+                <h2 class="text-2xl font-bold mb-4">Métodos de Download</h2>
+                
+                <p class="text-gray-600 mb-6">Os jogadores podem baixar o jogo através dos seguintes métodos:</p>
+                
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li class="text-gray-600">Site oficial: <a href="https://game.6266game.cn/website/zdbjl/?w7cdSjjj" class="text-primary hover:underline">https://game.6266game.cn/website/zdbjl/?w7cdSjjj</a></li>
+                    <li class="text-gray-600">Procure por "PocketChampion" nas principais lojas de aplicativos</li>
+                </ul>
+                
+                <p class="text-gray-600 mb-6">Esperamos aventurar com você no mundo do PocketChampion, colecionar Pokémon, desafiar oponentes e se tornar o treinador mais forte!</p>
+                
+                <p class="text-gray-600 font-bold">Equipe de Desenvolvimento do PocketChampion</p>
+                <p class="text-gray-600">15 de março de 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artigos Relacionados -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Artigos Relacionados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../../images/Portuguese/3.jpg" alt="Guia de Seleção de Starter" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Guia de Seleção de Pokémon Starter</h3>
+                        <p class="text-gray-600 mb-4">Introdução detalhada às características e prós e contras de cada geração de starters para ajudá-lo a fazer a melhor escolha.</p>
+                        <a href="article2.html" class="text-primary font-medium hover:underline">Ler Mais</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../../images/Portuguese/4.jpg" alt="Guia do Sistema de Terastalização" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Guia do Sistema de Terastalização</h3>
+                        <p class="text-gray-600 mb-4">Introdução detalhada aos princípios, efeitos e dicas de uso da Terastalização para dar a você uma vantagem nas batalhas.</p>
+                        <a href="article3.html" class="text-primary font-medium hover:underline">Ler Mais</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../../images/Portuguese/5.jpg" alt="Guia de Batalha Multiplayer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Guia de Batalha Terastal Multiplayer</h3>
+                        <p class="text-gray-600 mb-4">Introdução às regras, dicas e melhores composições de equipe para batalhas Terastal multiplayer para ajudá-lo a vencer em batalhas de equipe.</p>
+                        <a href="article4.html" class="text-primary font-medium hover:underline">Ler Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Download -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Comece Sua Aventura Agora!</h2>
+            <p class="text-xl mb-8">Junte-se à abertura ao público do PocketChampion e experimente o conteúdo completo do jogo</p>
+            <a href="https://game.6266game.cn/website/zdbjl/?w7cdSjjj" class="bg-white text-primary font-bold py-4 px-10 rounded-xl border-2 border-white btn-hover inline-block">
+                <i class="fa fa-download mr-2"></i>Baixar Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PocketChampion</h3>
+                    <p class="text-gray-400">Um jogo de batalha de RPG com mais de 1000 Pokémon das gerações 1-9</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Início</a></li>
+                        <li><a href="../features.html" class="text-gray-400 hover:text-white transition-colors">Características</a></li>
+                        <li><a href="../guides.html" class="text-gray-400 hover:text-white transition-colors">Guias</a></li>
+                        <li><a href="../codes.html" class="text-gray-400 hover:text-white transition-colors">Códigos</a></li>
+                        <li><a href="../articles.html" class="text-gray-400 hover:text-white transition-colors">Artigos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Fale Conosco</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fa fa-envelope mr-2"></i> <span class="text-gray-400">support@pocketchampion.com</span></li>
+                        <li class="flex items-center"><i class="fa fa-phone mr-2"></i> <span class="text-gray-400">+86 123 4567 8910</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Siga-nos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 PocketChampion. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle do Menu Móvel
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
