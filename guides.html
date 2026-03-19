@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guias - PocketChampion | Guia para Treinadores de Pokémon</title>
+    <meta name="description" content="Guias para o jogo PocketChampion, incluindo treinamento de Pokémon, estratégias de batalha, dicas de Terastalização e Mega Evolução, para ajudá-lo a se tornar o treinador mais forte">
+    <meta name="keywords" content="PocketChampion, guias do jogo, treinamento de Pokémon, estratégias de batalha, Terastalização, Mega Evolução">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Barra de Navegação -->
+    <nav class="sticky top-0 z-50 bg-dark bg-opacity-80 backdrop-blur-md text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="PocketChampion Logo" class="h-10 mr-3">
+                    <span class="text-xl font-bold">PocketChampion</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium hover:text-accent transition-colors">Início</a>
+                    <a href="features.html" class="font-medium hover:text-accent transition-colors">Características</a>
+                    <a href="guides.html" class="font-medium hover:text-accent transition-colors">Guias</a>
+                    <a href="codes.html" class="font-medium hover:text-accent transition-colors">Códigos</a>
+                    <a href="articles.html" class="font-medium hover:text-accent transition-colors">Artigos</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Menu Móvel -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 font-medium hover:text-accent transition-colors">Início</a>
+                <a href="features.html" class="block py-2 font-medium hover:text-accent transition-colors">Características</a>
+                <a href="guides.html" class="block py-2 font-medium hover:text-accent transition-colors">Guias</a>
+                <a href="codes.html" class="block py-2 font-medium hover:text-accent transition-colors">Códigos</a>
+                <a href="articles.html" class="block py-2 font-medium hover:text-accent transition-colors">Artigos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="relative h-64 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/Portuguese/1.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
+        <div class="relative z-10 text-center text-white max-w-4xl px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Guias do Jogo</h1>
+            <p class="text-lg md:text-xl">Guia para se tornar o treinador mais forte</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo dos Guias -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Barra Lateral Esquerda -->
+                <div class="md:col-span-1">
+                    <div class="bg-light rounded-2xl p-6 shadow-md mb-8">
+                        <h3 class="text-xl font-bold mb-4">Categorias de Guias</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#principiante" class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                    <i class="fa fa-star mr-2"></i>
+                                    Guia para Principiantes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#treinamento" class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                    <i class="fa fa-heart mr-2"></i>
+                                    Treinamento de Pokémon
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#batalha" class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                    <i class="fa fa-bolt mr-2"></i>
+                                    Estratégias de Batalha
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#evolucao" class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                    <i class="fa fa-magic mr-2"></i>
+                                    Terastalização & Mega Evolução
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#equipe" class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                    <i class="fa fa-users mr-2"></i>
+                                    Construção de Equipe
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-light rounded-2xl p-6 shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Guias Populares</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" class="text-gray-700 hover:text-primary transition-colors">
+                                    Guia de Seleção de Starter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-700 hover:text-primary transition-colors">
+                                    Dicas para Subir de Nível Rápido
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-700 hover:text-primary transition-colors">
+                                    Melhores Combinações de Terastalização
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-700 hover:text-primary transition-colors">
+                                    Estratégias para Ganhar Batalhas Multiplayer
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Conteúdo Direito -->
+                <div class="md:col-span-2">
+                    <!-- Guia para Principiantes -->
+                    <div id="principiante" class="bg-light rounded-2xl p-6 shadow-md mb-8 card-hover">
+                        <h2 class="text-2xl font-bold mb-4">Guia para Principiantes</h2>
+                        <p class="text-gray-600 mb-6">Como treinador novo, você precisa entender o gameplay básico e as operações do jogo. Aqui estão algumas dicas para começar:</p>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Escolha seu Pokémon Starter</h3>
+                                    <p class="text-gray-600">Escolha um dos starters das gerações 1-9 como seu parceiro inicial. Diferentes Pokémon têm atributos e habilidades diferentes, escolha o que se adapte ao seu estilo de jogo.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Complete as Tarefas de Novato</h3>
+                                    <p class="text-gray-600">O jogo guiará você através de uma série de tarefas de novato para ajudá-lo a se familiarizar com as operações do jogo e o gameplay básico. Completar estas tarefas pode ganhar recompensas generosas.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Explore o Mundo do Jogo</h3>
+                                    <p class="text-gray-600">Explore diferentes áreas no jogo, colecione Pokémon, desafie ginásios e aumente seu nível de treinador.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Treinamento de Pokémon -->
+                    <div id="treinamento" class="bg-light rounded-2xl p-6 shadow-md mb-8 card-hover">
+                        <h2 class="text-2xl font-bold mb-4">Treinamento de Pokémon</h2>
+                        <p class="text-gray-600 mb-6">O treinamento de Pokémon é a chave para se tornar o treinador mais forte. Aqui estão algumas dicas para treinar seus Pokémon:</p>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Subir de Nível</h3>
+                                    <p class="text-gray-600">Aumente o nível do seu Pokémon através de batalhas e usando itens de experiência. Quanto maior o nível, mais fortes serão as estatísticas do Pokémon.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Distribuição de EV</h3>
+                                    <p class="text-gray-600">Ganhe EV através de batalhas, e uma distribuição razoável de esforço pode fazer seu Pokémon mais forte em aspectos específicos.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Aprendizado de Habilidades</h3>
+                                    <p class="text-gray-600">Ensine habilidades apropriadas aos seus Pokémon, e escolha a melhor combinação de habilidades de acordo com os atributos do Pokémon e seu estilo de batalha.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Estratégias de Batalha -->
+                    <div id="batalha" class="bg-light rounded-2xl p-6 shadow-md mb-8 card-hover">
+                        <h2 class="text-2xl font-bold mb-4">Estratégias de Batalha</h2>
+                        <p class="text-gray-600 mb-6">As batalhas são o gameplay core do jogo, dominar as estratégias de batalha pode dar a você uma vantagem nas batalhas:</p>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Vantagem de Tipo</h3>
+                                    <p class="text-gray-600">Entenda as relações de vantagem de tipo, usar habilidades que são super efetivas contra o oponente pode causar mais dano.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Combinação de Habilidades</h3>
+                                    <p class="text-gray-600">Equipe seus Pokémon com diferentes tipos de habilidades para lidar com várias situações.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Mudanças de Estado</h3>
+                                    <p class="text-gray-600">Use habilidades de mudança de estado para enfraquecer oponentes e melhorar suas próprias habilidades.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Terastalização & Mega Evolução -->
+                    <div id="evolucao" class="bg-light rounded-2xl p-6 shadow-md mb-8 card-hover">
+                        <h2 class="text-2xl font-bold mb-4">Terastalização & Mega Evolução</h2>
+                        <p class="text-gray-600 mb-6">A Terastalização e a Mega Evolução são mecanismos de batalha importantes no jogo:</p>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Terastalização</h3>
+                                    <p class="text-gray-600">A Terastalização pode mudar os atributos do Pokémon e melhorar o poder de habilidades específicas. Escolher o tipo Terastal apropriado pode dar ao seu Pokémon uma vantagem na batalha.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Mega Evolução</h3>
+                                    <p class="text-gray-600">A Mega Evolução pode melhorar enormemente as estatísticas do Pokémon, mudar sua forma e características. Usar a Mega Evolução no momento certo pode mudar o curso da batalha.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Timing</h3>
+                                    <p class="text-gray-600">Domine o timing da Terastalização e da Mega Evolução, usá-las no momento certo pode maximizar seus efeitos.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Construção de Equipe -->
+                    <div id="equipe" class="bg-light rounded-2xl p-6 shadow-md card-hover">
+                        <h2 class="text-2xl font-bold mb-4">Construção de Equipe</h2>
+                        <p class="text-gray-600 mb-6">Construir uma equipe equilibrada é a chave para a vitória:</p>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Equilíbrio de Tipo</h3>
+                                    <p class="text-gray-600">Escolha Pokémon de diferentes tipos para lidar com vários inimigos. Evite que sua equipe tenha fraquezas de atributo em comum.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Divisão de Papéis</h3>
+                                    <p class="text-gray-600">Atribua diferentes papéis aos Pokémon da sua equipe, como atacantes, defensores e suportes.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="text-primary text-2xl mr-4">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-2">Coordenação Tática</h3>
+                                    <p class="text-gray-600">Projete coordenação tática de equipe, como Baton Pass, equipes climáticas e equipes Trick Room.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Download -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Comece Sua Aventura Agora!</h2>
+            <p class="text-xl mb-8">Aplique estas dicas de guia e torne-se o treinador mais forte</p>
+            <a href="https://game.6266game.cn/website/zdbjl/?w7cdSjjj" class="bg-white text-primary font-bold py-4 px-10 rounded-xl border-2 border-white btn-hover inline-block">
+                <i class="fa fa-download mr-2"></i>Baixar Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PocketChampion</h3>
+                    <p class="text-gray-400">Um jogo de batalha de RPG com mais de 1000 Pokémon das gerações 1-9</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Início</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition-colors">Características</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white transition-colors">Guias</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white transition-colors">Códigos</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition-colors">Artigos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Fale Conosco</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fa fa-envelope mr-2"></i> <span class="text-gray-400">support@pocketchampion.com</span></li>
+                        <li class="flex items-center"><i class="fa fa-phone mr-2"></i> <span class="text-gray-400">+86 123 4567 8910</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Siga-nos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 PocketChampion. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle do Menu Móvel
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
